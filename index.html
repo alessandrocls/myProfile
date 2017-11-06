@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/4b4a2828f2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    *{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      border-radius: 0 !important;
+    }
+    .black{
+      background-color: #38297a;
+    }
+    .headerName{
+      /*font-family: Montserrat, sans-serif !important;*/
+      color: white;
+      width: 100%;
+      white-space: nowrap;
+    }
+    @media screen and (min-width:768px){
+      .headerName{
+        position:relative;
+        top: 100px;
+        z-index: 10;
+      }
+      .fwDesc{
+        margin-right: 90px;
+      }
+      #headerImg2{
+        margin-left: -70px;
+        height: 200px;
+        width: 200px;
+      }
+    }
+    .sticky{
+      top:0;
+      position: sticky;
+    }
+    #headerImg1{
+      height: 200px;
+      width: 350px;
+    }
+    .headerImg2{
+      height:200px;
+      width:200px;
+    }
+    .row{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    #myScrollspy{
+      box-sizing: border-box !important;
+      background-color: black !important;
+    }
+    #myScrollspy ul li{
+      border-bottom: 1px white solid !important;
+    }
+    #myScrollspy ul li a{
+      color: white !important;
+      text-decoration: none !important;
+    }
+
+
+    marquee img{
+      height: 50px;
+      width: 50px;
+    }
+
+
+    .profilePic{
+      height: 300px;
+      width: 300px;
+      box-sizing: border-box;
+      border: 1px black solid;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 2px 20px 10px 0;
+      float: left;
+    }
+    .nav-stacked ul{
+      height: 100% !important;
+    }
+    .nav-stacked li a:hover{
+      background-color: #d890f9 !important;
+    }
+    .nav-stacked li a{
+      text-align: right !important;
+      padding-right: 10px !important;
+    }
+    .margin1{
+      padding-left: 20px !important;
+      padding-top: 20px !important;
+    }
+    .social{
+      color: white;
+      overflow-x: scroll;
+    }
+    body{
+      background-color: #c9d4e5!important;
+      font-family: 'Tittilium Web',sans-serif;
+      font-weight: lighter;
+    }
+    hr {
+    	height: 6px;
+    	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+        border: 0;
+    }
+    .icons{
+      height: 55px;
+      width: 55px;
+      margin: 10px;
+    }
+    .fwName{
+      color: black;
+      font-size: 25px;
+      /*text-decoration:underline;*/
+      font-weight: bold;
+    }
+    .fwDesc{
+      color: #838384;
+      text-align:right;
+      font-weight: bold;
+    }
+    .social h2{
+      /*border-bottom: 1px white solid;*/
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    .cHeader{
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+
+    .contacts li{
+      overflow-x:scroll;
+    }
+    .progress{
+      margin-right: 20px;
+    }
+
+    #section1 p{
+      text-align: justify;
+      margin-right: 10px;
+    }
+    #section2 h2{
+      font-family: Oswald, sans-serif !important;
+      font-size: 18px;
+    }
+    #section4 h1{
+      margin-bottom: 15px !important;
+    }
+    #section4 ul{
+      list-style-type: none;
+      margin-left: 20px;
+    }
+    #section4 ul small{
+      margin-left: 40px;
+    }
+    #section4 ul hr{
+      background: none !important;
+      border-top: 1px dashed #8c8b8b !important;
+    }
+    #section5 .embed-responsive{
+      margin: 0 20px 20px 0 !important;
+    }
+    blockquote p{
+      text-align: left !important;
+    }
+    </style>
+    <title>My Profile</title>
+  </head>
+  <body data-spy="scroll" data-target='#myScrollspy'>
+
+    <div class="col-xs-12 black">
+      <div class='col-xs-12 col-md-3'>
+      <h1 class='headerName'>&#xfeff;&#xff21;&#xff4c;&#xff45;&#xff53;&#xff53;&#xff41;&#xff4e;&#xff44;&#xff52;&#xff4f;</h1>
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <img class='img-responsive' id='headerImg1' src="img/feelsgoodman.png" onmouseover='this.src="https://pbs.twimg.com/media/C8StvSWUIAAnpZ-.png:large"' onmouseout='this.src="feelsgoodman.png"'>
+      </div>
+      <div class='col-xs-6 col-md-4'>
+        <img class='img-responsive' id='headerImg2'src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/2016/08/02/apple-removes-handgun-emoji-ios10-waterpistol.png" alt="" height:'300px'>
+      </div>
+      <div class='col-xs-12 slideshow'>
+        <div class='mover1'></div>
+
+        <marquee behavior="scroll" direction="left" scrollamount="20">
+          <img src="https://pbs.twimg.com/media/BVqyxTNCUAEJR6M.png" alt="">
+          <img src="https://cdn.frankerfacez.com/emoticon/52846/4" alt="">
+          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/osfrog-profile_image-a363b879d42b2a13-300x300.png" alt="">
+          <img src="https://static-cdn.jtvnw.net/emoticons/v1/10327/3.0" alt="">
+          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/panel-66596357-image-f245db5d67062433-320-320.png" alt="">
+          <img src="https://pbs.twimg.com/media/CKo7mXLUMAALiJG.png" alt="">
+          <img src="https://t5.rbxcdn.com/07cddd4ee66415c94a93ac466fda47e0" alt="">
+          <img src="https://vignette.wikia.nocookie.net/kancolle/images/4/4d/MingLee.png/revision/latest?cb=20160816162022" alt="">
+          <img src="https://vignette.wikia.nocookie.net/kancolle/images/8/81/Kappa.png/revision/latest?cb=20160111205813" alt="">
+          <img src="https://vignette.wikia.nocookie.net/kancolle/images/4/4f/4Head.png/revision/latest?cb=20160817131305" alt="">
+          <img src="http://i0.kym-cdn.com/photos/images/facebook/000/549/256/2dd.png" alt="">
+          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/panel-58500826-image-a8ce980532a637cf-320.png" alt="">
+          <img src="https://vignette.wikia.nocookie.net/kancolle/images/2/21/PogChamp_Emote.png/revision/latest?cb=20160817151144" alt="">
+          <img src="https://pbs.twimg.com/media/Cv9Y-20VIAAF_tD.png" alt="">
+          <img src="https://pbs.twimg.com/media/DHWveFhWsAAItPN.png" alt="">
+          <img src="https://pbs.twimg.com/media/C3jrkxXVYAAJV79.png" alt="">
+          <img src="https://pbs.twimg.com/profile_images/577309793104175104/y2jIo9dq.png" alt="">
+          <img src="https://i.imgur.com/eyhBxIZ.jpg" alt="">
+          <img src="https://studio.code.org/v3/assets/gqoJZSRzWTmk1zISBKLucA/KKona.png" alt="">
+          <img src="https://pbs.twimg.com/media/DJawaaUUIAAcHVc.png" alt="">
+          <img src="https://pbs.twimg.com/media/CWidjXcWcAAzftj.png" alt="">
+          <img src="https://media-curse.cursecdn.com/attachments/thumbnails/254/825/502/349/ANELE.png" alt="">
+          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/cmonbruh-profile_image-84cf1a6644b6e42a-300x300.png" alt="">
+          <img src="https://a.ppy.sh/4405466_1488385081.png" alt="">
+          <img src="https://static-cdn.jtvnw.net/emoticons/v1/117701/3.0" alt="">
+          <img src="https://pbs.twimg.com/media/ChKvygRWMAAL7wq.png" alt="">
+          <img src="https://i.imgur.com/1JdLiGS.png?1" alt="">
+        </marquee>
+      </div>
+    </div>
+    <!-- <body data-spy="scroll" data-target="#myScrollspy" data-offset="20"> -->
+
+  <!-- <<div class="container"> -->
+    <div class="row">
+      <nav class="col-xs-3 sticky" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#section1">About Me</a></li>
+          <li><a href="#section2">Skills</a></li>
+          <li><a href="#section3">Favourite Quotes</a></li>
+          <li><a href="#section4">Education</a></li>
+          <li><a href="#section5">Highlights</a></li>
+        </ul>
+        <div class='col-xs-12 social'>
+          <h2 class='cHeader'><i class="fa fa-id-card fa-2x" aria-hidden="true"></i>CONTACTS</h2>
+          <ul class='contacts'>
+            <li><a href="https://www.facebook.com/ACLS98"><img class="icons"src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-512.png" alt="">Alessandro Christopher</a></li>
+            <li><img class="icons"src="http://www.sheetmetalfabricationcompany.co.uk/wp-content/uploads/2016/06/googleplus.png" alt="">alessandro.christopher</li>
+            <li><a href="https://www.instagram.com/alessandro.cls/"><img src="https://static1.squarespace.com/static/5818b673ff7c5021846d2ede/t/582a52bb414fb5702a74686c/1479168699535/instagram+icon+white.png" alt="" class="icons">alessandro.cls</a></li>
+            <li><img src="http://mobileexchanger.com/kimg/email.png" alt="" class="icons">alessandro_cls@yahoo.com</li>
+            <li><img src="https://openclipart.org/image/2400px/svg_to_png/216528/Mobile-Icon-White-on-Black.png" alt="" class="icons">+62 (838)-550 9996</li>
+          </ul>
+          <div class></div>
+        </div>
+
+      </nav>
+      <div class="col-xs-9 margin1">
+        <div id="section1">
+          <img class='img-responsive profilePic' src="https://images-ssl.gotinder.com/59cdea837eae477b3ea0bda7/640x640_b1dc8c5f-9f8d-4689-8d0f-94ab0f5d7032.jpg" alt="">
+          <h2 class='fwName'>&#xfeff;&#xff41;&#xff4c;&#xff45;&#xff53;&#xff53;&#xff41;&#xff4e;&#xff44;&#xff52;&#xff4f;&#xa0; &#xff43;&#xff0e;&#xa0; &#xff4c;&#xff45;&#xff4f;&#xff4e;&#xff41;&#xff52;&#xff44;&#xff4f;</h2>
+          <h6 class='fwDesc'>&#xfeff;&#xff41;&#xff45;&#xff53;&#xff54;&#xff48;&#xff45;&#xff54;&#xff49;&#xff43;&#xa0; &#xff57;&#xff45;&#xff42;&#xa0; &#xff44;&#xff45;&#xff53;&#xff49;&#xff47;&#xff4e;</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, inventore! Voluptatibus quisquam reprehenderit obcaecati ab animi, ipsum accusantium! Excepturi ipsam temporibus, amet ea neque, accusamus dignissimos officiis sit totam, sed debitis. Repellendus cupiditate minima laboriosam asperiores quasi, mollitia dolorem unde cum, facere veniam quae saepe? Porro tempora laboriosam beatae laudantium, facere nulla earum, perspiciatis quae voluptates quidem laborum illo magnam qui! Quia laboriosam nisi ipsum odit minus inventore, quos recusandae sequi soluta corporis dolorum eaque, fugit, perspiciatis ut. In dolores, eos repellat sapiente minima, quo corporis qui illum facere asperiores saepe aut doloribus distinctio cum ut soluta, optio sequi iure necessitatibus delectus praesentium illo culpa? Esse rem quaerat, doloremque vel nam deleniti et suscipit impedit aperiam aliquid consequatur dolore alias nobis minus? Molestias suscipit tempora nemo omnis soluta libero quasi, placeat impedit eligendi laborum alias deserunt assumenda voluptatibus dolorem. Sit dolorum culpa architecto in itaque, voluptatem officiis vero tempora eius fugit dolores error odit facere nobis earum aliquam, magnam veniam voluptatibus asperiores nihil magni. Quasi expedita, veritatis omnis, assumenda sequi odit odio reiciendis. Deserunt sint libero ipsum unde distinctio ea ipsa odio, saepe officia expedita adipisci, amet ut excepturi aut quis minima ullam molestiae laboriosam porro perspiciatis provident enim rem!</p>
+        </div>
+        <hr>
+        <div id="section2">
+          <h1>Skills</h1>
+          <h2>HTML</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+              <span class="sr-only">40% Complete (success)</span>
+            </div>
+          </div>
+          <h2>C++</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+              <span class="sr-only">20% Complete</span>
+            </div>
+          </div>
+          <h2>CSS</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+              <span class="sr-only">60% Complete (warning)</span>
+            </div>
+          </div>
+          <h2>JavaScript</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              <span class="sr-only">80% Complete (danger)</span>
+            </div>
+          </div>
+
+        </div>
+        <hr>
+        <div id="section3">
+          <h1>Favourite Quotes</h1>
+          <blockquote onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">
+            <p>"If two vegans had an argument, is it still beef?"</p>
+            <footer>Unknown Internet Stranger</footer>
+            <audio id='mySound' src='audio/MACINTOSH PLUS - リサフランク420  現代のコンピュー.mp3'/>
+
+
+            </blockquote>
+            <blockquote onmouseover="PlaySound('mySound1')" onmouseout="StopSound('mySound1')">
+              <p>"Power resides where men believe it resides. It’s a trick. A shadow on the wall. And a very small man can cast a very large shadow."</p>
+              <footer>Varys (Game of Thrones)</footer>
+              <audio id='mySound1' src='audio/Game Of Thrones -Official- Show Open (HBO).mp3'/>
+
+          </blockquote>
+        </div>
+        <hr>
+        <div id="section4">
+          <h1>Education</h1>
+          <ul>
+            <li><i class="fa fa-graduation-cap fa-2x" aria-hidden="true">Raffles International School</i><br><small><em>2012-2015</em></small></li>
+            <hr>
+            <li><i class="fa fa-graduation-cap fa-2x" aria-hidden="true">University of Texas at Austin</i><br><small><em>2018-2022</em></small></li>
+            <hr>
+            <li><i class="fa fa-graduation-cap fa-2x" aria-hidden="true">Caltech Institute of Technology</i><br><small><em>2024-2026</em></small></li>
+            <hr>
+            <li><i class="fa fa-graduation-cap fa-2x" aria-hidden="true">Rice University</i><br><small><em>2028-2029</em></small></li>
+          </ul>
+        </div>
+        <hr>
+        <div id="section5">
+          <h1>My Highlights</h1>
+          <div class='col-xs-12 col-md-6'>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" src="vids/knetic - 2 aces still lost xd.mp4?rel=0" allowfullscreen controls></video>
+            </div>
+          </div>
+          <div class='col-xs-12 col-md-6'>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" src="vids/480.mp4?rel=0" allowfullscreen controls></vodep>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    <!-- </div> -->
+  </div>
+
+    <script>
+    function PlaySound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.play();
+    }
+
+    function StopSound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.pause();
+        thissound.currentTime = 0;
+    }
+
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    </script>
+  </body>
+</html>
